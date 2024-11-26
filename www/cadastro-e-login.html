@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Pretty Nails</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+  
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="cadastro-e-login" class="page">
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="container">
+
+                        <div class="form-box login">
+                            <form action="">
+                                <h1>Login</h1>
+                                <div class="input-box">
+                                    <input type="text" id="nome-login" placeholder="Nome de usuário" required>
+                                    <i class="mdi mdi-account"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" id="senha-login" placeholder="Senha" required>
+                                    <i class="mdi mdi-lock"></i>
+                                </div>
+                                <div class="esqueci-a-senha">
+                                    <a href="#">Esqueceu a sua senha?</a>
+                                </div>
+                                <a href="/index/"><button type="submit" class="btn">Login</button></a>
+                                <p>Ou faça login com plataformas digitais:</p>
+                                <div class="plataformas-digitais">
+                                    <a href="#"><i class="mdi mdi-google"></i></a>
+                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="form-box cadastro">
+                            <form action="">
+                                <h1>Cadastro</h1>
+                                <div class="input-box">
+                                    <input type="text"  id="nome" placeholder="Nome de usuário" required>
+                                    <i class="mdi mdi-account"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="email" id="email" placeholder="Email" required>
+                                    <i class="mdi mdi-email"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" id="cidade" placeholder="cidade" required>
+                                    <i class="mdi mdi-city"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" id="senha" placeholder="Senha" required>
+                                    <i class="mdi mdi-lock"></i>
+                                </div>
+                                <a href="/index/"><button type="submit" class="btn">Cadastre-se</button></a>
+                                <p>Ou Cadastre-se com plataformas digitais:</p>
+                                <div class="plataformas-digitais">
+                                    <a href="#"><i class="mdi mdi-google"></i></a>
+                                    <a href="#"><i class="mdi mdi-facebook"></i></a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="toggle-box">
+                            <div class="toggle-panel toggle-left">
+                                <h1>Bem vindo!</h1>
+                                <p>Ainda não tem uma conta?</p>
+                                <button class="btn cadastro-btn">Cadastre-se</button>
+                            </div>
+                            <div class="toggle-panel toggle-right">
+                                <h1>Já tem uma conta?</h1>
+                                <p>Entre com seu login</p>
+                                <button class="btn login-btn">Entrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
