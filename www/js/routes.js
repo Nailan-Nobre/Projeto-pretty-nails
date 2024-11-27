@@ -122,7 +122,7 @@ app.on('routeChange', function (route) {
 
 function onDeviceReady() {
   //Quando estiver rodando no celular
-  var mainView = app.views.create('.view-main', { url: '/index/' });
+  var mainView = app.views.create('.view-main', { url: '/cadastro-e-login/' });
 
   //COMANDO PARA "OUVIR" O BOTAO VOLTAR NATIVO DO ANDROID 	
   document.addEventListener("backbutton", function (e) {
